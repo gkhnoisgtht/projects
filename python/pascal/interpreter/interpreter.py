@@ -1,7 +1,7 @@
 # Token types
 # EOF (end-of-file) token is used to indicate that
 # there is no more input left for lexical analysis
-INTEGER, PLUS, MINUS, EOF = 'INTEGER', 'PLUS', 'MINUS', 'EOF'
+INTEGER, PLUS, MINUS, TIMES, DIVIDE, EOF = 'INTEGER', 'PLUS', 'MINUS', 'TIMES', 'DIVIDE', 'EOF'
 
 
 class Token(object):
@@ -83,6 +83,14 @@ class Interpreter(object):
                 self.advance()
                 return Token(MINUS, '-')
 
+            if self.current_char == '*':
+                self.advance()
+                return Token(TIMES, '*')
+
+            if self.current_char == '/':
+                self.advance()
+                return Token(DIVIDE, '/')
+
             self.error()
 
         return Token(EOF, None)
@@ -93,30 +101,37 @@ class Interpreter(object):
         else:
             self.error()
 
+    def term(self):
+        token = self.current_token
+        self.eat(INTEGER)
+        return token.value
+
     def expr(self):
         """Parser / Interpreter
 
         expr -> INTEGER PLUS INTEGER
         expr -> INTEGER MINUS INTEGER
+        expr -> INTEGER TIMES INTEGER
         """
         self.current_token = self.get_next_token()
 
-        left = self.current_token
-        self.eat(INTEGER)
+        result = self.term()
 
-        op = self.current_token
-        if op.type == PLUS:
-            self.eat(PLUS)
-        else:
-            self.eat(MINUS)
-
-        right = self.current_token
-        self.eat(INTEGER)
-
-        if op.type == PLUS:
-            result = left.value + right.value
-        else:
-            result = left.value - right.value
+        while self.current_token.type in (PLUS, MINUS, TIMES, DIVIDE):
+            token = self.current_token
+            if token.type == PLUS:
+                self.eat(PLUS)
+                result = result + self.term()
+            elif token.type == MINUS:
+                self.eat(MINUS)
+                result = result - self.term()
+            elif token.type == TIMES:
+                print token
+                self.eat(TIMES)
+                result = result * self.term()
+            elif token.type == DIVIDE:
+                self.eat(DIVIDE)
+                result = result / self.term()
         return result
 
 
