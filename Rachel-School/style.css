@@ -1,0 +1,62 @@
+.header-class {
+	text-align: left;
+	border:1px solid #000000;
+	box-sizing: border-box;
+	font-size: 4em;
+}
+
+.container {
+	display: flex;
+}
+
+.column {
+	flex: 1;
+	font-size: 2em;
+	border:1px solid #000000;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.menu-class {
+	order: 1;
+}
+
+.calendar-class {
+	order: 2;
+}
+
+.schedule-class {
+	order: 3;
+}
+
+.classes {
+	border: 1px solid #000000;
+	font-size: 1em;
+}
+
+.text {
+	margin-left: 1em;
+}
+
+.description {
+	margin-left: 3em;
+	margin-bottom: 2em;
+}
+
+.welcome {
+	text-align: center;
+	font-size: 3em;
+	margin: 3em;
+}
+
+.calendar {
+	text-align: center;
+	font-size: 1em;
+	margin: 1em;
+}
+
+.schedule {
+	text-align: center;
+	font-size: 1em;
+	margin: 1em;
+}
