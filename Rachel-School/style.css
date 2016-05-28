@@ -1,3 +1,55 @@
+/** {
+    outline: 1px solid red;
+} */
+
+
+/* elements styles */
+
+body {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(silver, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(silver, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(silver, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, silver, white); /* Standard syntax */
+}
+
+img {
+    width: 105px;
+    height: 105px;
+}
+
+table {
+	width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+	background-color: lightgreen;
+}
+
+table, th, td {
+	font-size: 1em;
+	padding: 1em;
+	border: 1px solid #000000;
+}
+
+td:hover {
+    background-color: #A10303;
+    color: white;
+}
+
+a, a:visited {
+    color: black;
+}
+
+a:hover, a:active {
+    color: red;
+}
+
+
+/* class styles */
+
+/* header */
 .header-class {
 	text-align: left;
 	border:1px solid #000000;
@@ -5,33 +57,63 @@
 	font-size: 4em;
 }
 
+
+/* menu */
 .container {
-	display: flex;
+	border: 1px solid #000000;
+    font-size: 1em;
+    text-align: center;
+    border-radius: .1em;
 }
 
-.column {
-	flex: 1;
-	font-size: 2em;
-	border:1px solid #000000;
-	box-sizing: border-box;
-	text-align: center;
+.navigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	font-size: 2em;\
 }
 
 .menu-class {
 	order: 1;
+	flex-grow: 1;
 }
 
 .calendar-class {
 	order: 2;
+	flex-grow: 1;
 }
 
 .schedule-class {
 	order: 3;
+	flex-grow: 1;
 }
 
+.python-class {
+	order: 1;
+	flex-grow: 1;
+	margin-top: .1em;
+}
+
+.java-class {
+	order: 2;
+	flex-grow: 1;
+	margin-top: .1em;
+}
+
+.html-class {
+	order: 3;
+	flex-grow: 1;
+	margin-top: .1em;
+}
+
+/* data */
 .classes {
 	border: 1px solid #000000;
 	font-size: 1em;
+	border-radius: .5em;
+	border: 2px solid #000000;
+	margin-top: .5em;
+	padding: 25px;
 }
 
 .text {
@@ -53,10 +135,37 @@
 	text-align: center;
 	font-size: 1em;
 	margin: 1em;
+	border-radius: 1em;
+	border: 2px solid #000000;
+	padding: 20px;
 }
 
 .schedule {
 	text-align: center;
 	font-size: 1em;
 	margin: 1em;
+	border-radius: 1em;
+	border: 2px solid #000000;
+	padding: 20px;
+}
+
+.selections {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* mobile? */
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+  }
 }
