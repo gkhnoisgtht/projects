@@ -17,6 +17,9 @@
         width: "80%"
     }, 500);
 
+        // set colors for progressbar #3
+    $("#photoshop > div").css({ 'background': '#828181' });
+
     $( "#gimp" ).progressbar({
       value: 1
     });
@@ -24,6 +27,8 @@
      $("#gimp > .ui-progressbar-value").animate({
         width: "40%"
     }, 500);
+
+    $("#gimp > div").css({ 'background': '#828181' });
 
     $( "#maya" ).progressbar({
       value: 1
@@ -33,6 +38,9 @@
         width: "30%"
     }, 500);
 
+    $("#maya > div").css({ 'background': '#828181' });
+
+
     $( "#3dsmax" ).progressbar({
       value: 1
     });
@@ -40,6 +48,8 @@
      $("#3dsmax > .ui-progressbar-value").animate({
         width: "40%"
     }, 500);
+
+    $("#3dsmax > div").css({ 'background': '#828181' });
 
     $( "#unity" ).progressbar({
       value: 1
@@ -49,6 +59,8 @@
         width: "40%"
     }, 500);
 
+    $("#unity > div").css({ 'background': '#828181' });
+
     $( "#cryengine" ).progressbar({
       value: 1
     });
@@ -56,14 +68,18 @@
      $("#cryengine > .ui-progressbar-value").animate({
         width: "30%"
     }, 500);
+
+    $("#cryengine > div").css({ 'background': '#828181' });
   });
   </script>
 </head>
 <body>
 
 <div class="header">
-    <h3>Rachel Picard</h3>
-    <p>Computer Art and Animation</p>
+    <div class="jumbotron">
+        <h3>Rachel Picard</h3>
+        <p>Computer Art and Animation</p>
+    </div>
 </div>
 
 <!-- Code for the menu -->
@@ -81,6 +97,10 @@
     </div>
 
     <div class="container portfolio">
+        <a href="sip.html"> Senior Project </a>
+    </div>
+
+    <div class="container portfolio">
         <a href="video.html"> Video </a>
     </div>
 
@@ -90,7 +110,15 @@
 </div>
 
 <!-- Label our data so that we can handle styling in CSS -->
-<div id="boxes_resume">
+<div class="boxes_resume">
+    <h3>Background</h3>
+    <p>I am a student at the University of Advancing Technology working towards a BA in Game Art and Animation.
+    I have worked professionally as an animator for Ball Aerospace, and have worked on graphic design for Complete Employment Check, as well as First Light Home Care </p>
+    <br>
+    <h3>Work History</h3>
+    <p>Ball Aerospace and Technology - Technical Aide: 3D Animation</p>
+    <p>Dates: 5/13 - 7/14</p>
+    <br>
     <h3>Graphics</h3>
     <p>Photoshop <div id="photoshop"></div></p>
     <p>Gimp <div id="gimp"></div></p>

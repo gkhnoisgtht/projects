@@ -74,7 +74,7 @@ a:hover, a:active {
   font-size: 2em;
 }
 
-#boxes {
+.boxes {
   float:left;
   position:relative;
   display:inline-block;
@@ -85,7 +85,7 @@ a:hover, a:active {
   box-shadow:0 0 5px rgba(0,0,0,.35);
 }
 
-#boxes_video {
+.boxes_video {
   float:left;
   position:relative;
   display:inline-block;
@@ -96,7 +96,7 @@ a:hover, a:active {
   box-shadow:0 0 5px rgba(0,0,0,.35);
 }
 
-#boxes_resume {
+.boxes_resume {
   float:left;
   position:relative;
   width:100%;
