@@ -7,6 +7,22 @@
 </head>
 <body>
 
+
+<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAshdnkWVKuXpz_8VTKLwepItyMDqUynd4",
+    authDomain: "picard-uat-final.firebaseapp.com",
+    databaseURL: "https://picard-uat-final.firebaseio.com",
+    storageBucket: "picard-uat-final.appspot.com",
+    messagingSenderId: "100044090951"
+  };
+  firebase.initializeApp(config);
+
+  var storage = firebase.storage();
+</script>
+
 <div class="header">
     <div class="jumbotron">
         <h3>Rachel Picard</h3>
