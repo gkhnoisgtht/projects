@@ -8,7 +8,30 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 </head>
-<body>
+<script>
+function openTab(evt, cityName) {
+// Declare all variables
+var i, tabcontent, tablinks;
+
+// Get all elements with class="tabcontent" and hide them
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+
+// Get all elements with class="tablinks" and remove the class "active"
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+
+// Show the current tab, and add an "active" class to the link that opened the tab
+document.getElementById(cityName).style.display = "block";
+evt.currentTarget.className += " active";
+}
+
+</script>
+<body onload="openTab(event, 'Description')">
 
 <div class="header">
     <div class="jumbotron">
@@ -47,24 +70,78 @@
 <!-- Label our data so that we can handle styling in CSS -->
 <div class="boxes_resume">
     <ul class="tab">
-        <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">London</a></li>
-        <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">Paris</a></li>
-        <li><a href="#" class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'Description')">Description</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'Scenarios')">Scenarios</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'Objectives')">Objectives</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'Innovation')">Innovation</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'Inspiration')">Artistic Inspiration</a></li>
     </ul>
 
-    <div id="London" class="tabcontent">
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
+    <div id="Description" class="tabcontent">
+        <h3>Project Description</h3>
+        <p>The full deliverable of this project is a working prototype of a virtual reality game. The gamer would be playing as a dog and would have a story-like progression with chapters. The player would have to compete certain tasks such as getting treats from a puzzle toy, playing tug-of-war, and playing with other dogs in a dog park. Because the user is a dog, and incapable of direct communication with the human pet owner, they will gain an understanding of how dogs view the world. In the dog park, the user will learn dog body language from other dogs, knowing when to approach or back away. This can help the user better understand dog body language with their own pets in a fun switch of perspective. The goal of this game is for users to have a unique and fun experience with subtle education that can strengthen relationships with their own pets.
+        </p>
     </div>
 
-    <div id="Paris" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p>
+    <div id="Scenarios" class="tabcontent">
+        <h3>Usage Scenarios</h3>
+        <p>The player in the VR Dog Simulator has just been given a treat puzzle to play with. They use the hand peripherals to move their unwieldy dog paws in order to get all the treats, and only have a limited time in order get all of the treats out to earn points. If they reach the end, they receive a large treat worth multiple points. However, the humans are gathered around, giant hands and feet  reach toward the player, pick up the toy and move it to the middle of the room, and make a lot of noise “what a smart puppy you are!”. The player gains some insight on how unsettling it can be when humans bother a dog in the middle of a task. A challenging, fun game allows the player to better understand their pets, and possibly understand how frustrating it can be when they interrupt their dog in the middle of something they consider important such as eating or investigating a new toy.</p>
+        <br>
+        <p>The player in the VR Dog Simulator has just entered the dog park for the first time. As the only dog in the family, he has no idea how to interact socially with other dogs. At first, the player is bombarded by all the other dogs in the park trying to sniff and greet him. After a while they disperse and he must find dogs to play with. The more social situations he does correctly, the more points he earns. He learns that a wagging tail can mean many different things depending on  how high or low it is, as well as the speed. If the player correctly chooses whether to play or ignore a dog based on what the dog is saying, he gains points and learns through trial and error how to interact with other dogs. This simulation will give the gamer knowledge of dog body language that he can use with his own pet. </p>
     </div>
 
-    <div id="Tokyo" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
+    <div id="Objectives" class="tabcontent">
+        <h3>Project Objectives</h3>
+        <ul>
+            <li>Research dog behavior
+                <ul>
+                    <li>Research common dog body language</li>
+                    <li> Gather examples of dog body language</li>
+                </ul>
+            </li>
+            <li>Create game assets
+                <ul>
+                    <li>Create dog assets</li>
+                    <li>Create riggings for the dog assets</li>
+                    <li>Create humans, dog toys, and bowl assets</li>
+                    <li>Create background and scenic assets</li>
+                </ul>
+            </li>
+            <li>Design scenarios
+                <ul>
+                    <li>Design timeline for game</li>
+                    <li>Write scripts for the user to outline tasks</li>
+                    <li>Plan positive and negative aspects of each outcome and scenario</li>
+                </ul>
+            </li>
+            <li>Script scenarios
+                <ul>
+                    <li>Find programmer</li>
+                    <li>Combine assets with design into custom scripts</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="Innovation" class="tabcontent">
+        <h3>Project Innovation</h3>
+        <p>What makes this project innovative?</p>
+        <br>
+        <p>With virtual reality being available to the everyday consumer, we have an opportunity to give them an experience like never before. Player point of view has never been more relevant, and by having our players interact from a dog's perspective we give them a fun experience that can be educational as well. Players become more aware of their dog's personal space, dog body language, and hopefully gain some insight they can use outside of the headset. </p>
+        <br>
+        <p>The virtual reality dog simulator takes newly polished technology and puts you in an unlikely pair of shoes, or paws.</p>
+    </div>
+
+    <div id="Inspiration" class="tabcontent">
+        <h3>Artistic Inspiration</h3>
+        <p>Because this project focuses so heavily on understanding dog body language, it is vital to the project that the art appears simple and clean. A highly detailed dog in the dog park may look appealing, but it will most likely take the players focus away from what is important, the dog's tail, ear, and body movements. The key is balancing simplicity and function with design the user will enjoy.</p>
+        <br>
+        <p>One of the largest inspiration for this project is the work of the Campo Santo's game Firewatch. Though their artwork is not the most realistically textured, it is refreshing, clean, and items are easily visible in the wilderness. </p>
+        <br>
+        <p>Images below are examples of the artistic feel I would like to provide. They are the sole copyright of Campo Santo.</p>
+        <img class="resize_extern" src="http://playertheory.com/images/FirewatchDeer.jpg">
+        <img class="resize_extern" src="http://www.firewatchgame.com/screenshots/firewatch-e3-2.jpg">
+        <img class="resize_extern" src="http://www.firewatchgame.com/screenshots/firewatch-2.jpg">
     </div>
 </div>
 </body>
