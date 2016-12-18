@@ -9,26 +9,6 @@
     <title>Rachel Picard Portfolio</title>
     <link rel='stylesheet' href='style.css'/>
 
-    <script>
-
-    function toggle(id){
-        var modal = document.getElementById('myModal');
-        var img = document.getElementById(id);
-        var modalImg = document.getElementById("img01");
-        modal.style.display = "block";
-        modalImg.src = img.src;
-        modalImg.alt = img.alt;
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-    }
-
-    </script>
 </head>
 <body>
 <div class="header">
@@ -66,41 +46,92 @@
 <div id="gallery">
     <h2>Portfolio</h2>
     <ul id="wrap">
-        <li class="boxes"><img id="1" onclick="toggle(1)" class="resize" src="images/Gear.jpg">
+        <li class="boxes"><img class="resize" src="images/Rig_Render.jpg">
+            <div class="desc">Rigging</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/Gear.jpg">
             <div class="desc">Gear</div>
         </li>
-        <li class="boxes"><img id="2" onclick="toggle(2)" class="resize" src="images/Glowing_Sword.jpg">
+        <li class="boxes"><img class="resize" src="images/Glowing_Sword.jpg">
             <div class="desc">Glowing Sword</div>
         </li>
-        <li class="boxes"><img id="3" onclick="toggle(3)" class="resize" src="images/Human_Model.jpg">
+        <li class="boxes"><img class="resize" src="images/Human_Model.jpg">
             <div class="desc">Human Model</div>
         </li>
-        <li class="boxes"><img id="4" onclick="toggle(4)" class="resize" src="images/Modular_Floors.jpg">
+        <li class="boxes"><img class="resize" src="images/Modular_Floors.jpg">
             <div class="desc">Modular Floors</div>
         </li>
-        <li class="boxes"><img id="5" onclick="toggle(5)" class="resize" src="images/Modular_Walls.jpg">
+        <li class="boxes"><img class="resize" src="images/Modular_Walls.jpg">
             <div class="desc">Modular Walls</div>
         </li>
-        <li class="boxes"><img id="6" onclick="toggle(6)" class="resize" src="images/Primitive_Robot_1.jpg">
+        <li class="boxes"><img class="resize" src="images/Primitive_Robot_1.jpg">
             <div class="desc">Primitive Robot 1</div>
         </li>
-        <li class="boxes"><img id="7" onclick="toggle(7)" class="resize" src="images/Primitive_Robot_2.jpg">
+        <li class="boxes"><img class="resize" src="images/Primitive_Robot_2.jpg">
             <div class="desc">Primitive Robot 2</div>
         </li>
-        <li class="boxes"><img id="8" onclick="toggle(8)" class="resize" src="images/Room_Render_1.jpg">
+        <li class="boxes"><img class="resize" src="images/Room_Render_1.jpg">
             <div class="desc">Room Render 1</div>
         </li>
-        <li class="boxes"><img id="9" onclick="toggle(9)" class="resize" src="images/Room_Render_2.jpg">
+        <li class="boxes"><img class="resize" src="images/Room_Render_2.jpg">
             <div class="desc">Room Render 2</div>
         </li>
-        <li class="boxes"><img id="10" onclick="toggle(10)" class="resize" src="images/Room_Render_3.jpg">
+        <li class="boxes"><img class="resize" src="images/Room_Render_3.jpg">
             <div class="desc">Room Render 3</div>
         </li>
-        <li class="boxes"><img id="15" onclick="toggle(15)" class="resize" src="images/Screwdriver.jpg">
+        <li class="boxes"><img class="resize" src="images/Screwdriver.jpg">
             <div class="desc">Screwdriver Model</div>
         </li>
-        <li class="boxes"><iframe id="15" onclick="toggle(15)" class="boxes_video_resume" src="https://www.youtube.com/embed/sfgiL2zu-RA" frameborder="0" allowfullscreen></iframe>
+        <li class="boxes"><iframe class="resize" src="https://www.youtube.com/embed/sfgiL2zu-RA" frameborder="0" allowfullscreen></iframe>
             <div class="desc">Luke Animation</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/Picard_Rachel_ceilinglight.jpeg">
+            <div class="desc">Ceiling Light</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/Picard_Rachel_Ashtray.jpg">
+            <div class="desc">Ashtray</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/Picard_Rachel_bunkerlight.jpeg">
+            <div class="desc">Bunker Light</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/Picard_Rachel_CafeScene.jpeg">
+            <div class="desc">Cafe Scene</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/Picard_CircleExercise.jpg">
+            <div class="desc">Sample Circle</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/Picard_Rachel_ClockPerspecive.jpg">
+            <div class="desc">Clock Perspective</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/Picard_Rachel_TribDragon.jpg">
+            <div class="desc">Trib Dragon</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/benefitcard.JPG">
+            <div class="desc">TOTG Benefit Card</div>
+        </li>
+        <li class="boxes"><img lass="resize" src="images/classcard.JPG">
+            <div class="desc">TOTG Class Card</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/detrimentcard.JPG">
+            <div class="desc">TOTG Detriment Card</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/TOTG_ClassCards.png">
+            <div class="desc">TOTG Class Cards</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/TOTG_FinalBosses_sheet.png">
+            <div class="desc">TOTG Final Bosses</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/TOTG_minibosses_sheet.png">
+            <div class="desc">TOTG Mini Bosses</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/TOTG_RaceCards.png">
+            <div class="desc">TOTG Race Cards</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/imogenheapcover.jpg">
+            <div class="desc">Imogen Heap Cover Redesign</div>
+        </li>
+        <li class="boxes"><img class="resize" src="images/asymmetricalsymmetry.jpg">
+            <div class="desc">Asymmetrical Symmetry</div>
         </li>
     </ul>
 </div>
