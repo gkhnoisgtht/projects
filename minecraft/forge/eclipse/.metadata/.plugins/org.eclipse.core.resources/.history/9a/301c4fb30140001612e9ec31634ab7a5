@@ -1,0 +1,8 @@
+package com.shittyserver.tutorial;
+
+import cpw.mods.fml.common.Mod;
+
+@Mod(modid = "TM", name = "Tutorial Mod", version = "1.0")
+public class TutorialMod {
+
+}

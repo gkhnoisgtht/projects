@@ -1,0 +1,26 @@
+package com.shittyserver.tutorial;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+
+@Mod(modid = "TM", name = "Tutorial Mod", version = "1.0")
+public class TutorialMod {
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event){
+		// Item/Block init and registration
+		//config handling
+	}
+	
+	@EventHandler
+	public void init(FMLInitializationEvent event){
+		// Proxy, Tile Entity, entity, GUI, Packet Registration
+	}
+	
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event){
+		
+	}
+}

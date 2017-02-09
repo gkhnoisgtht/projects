@@ -1,0 +1,16 @@
+[
+{
+  "modid": "gtm",
+  "name": "Gkhnoisgtht's Tutorial Mod",
+  "description": "Gkhnoisgtht's Tutorial Mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Gkhnoisgtht"],
+  "credits": "The Forge and FML guys, MrCrayfish for great tutorials",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

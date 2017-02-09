@@ -1,0 +1,12 @@
+[21:59:37] [main/INFO]: Setting user: Player506
+[21:59:37] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:59:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Tutorial Mod
+[21:59:42] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: TM/ in C:\Users\merc\dev\projects\minecraft\forge\bin
+[21:59:43] [Sound Library Loader/INFO]: Sound engine started
+[21:59:43] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[21:59:43] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[21:59:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Tutorial Mod
+[21:59:43] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: TM/ in C:\Users\merc\dev\projects\minecraft\forge\bin
+[21:59:43] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:59:43] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:59:44] [Client thread/INFO]: Stopping!
